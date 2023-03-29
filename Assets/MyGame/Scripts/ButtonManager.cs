@@ -8,15 +8,8 @@ public class ButtonManager : MonoBehaviour
 
     public TextMeshProUGUI push;
     public TextMeshProUGUI pull;
+    public GameObject doorOut;
+    public GameObject doorIn;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

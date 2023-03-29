@@ -8,6 +8,9 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
+    public TextMeshProUGUI timeOver;
+    public GameObject Amanshaus;
+
     private void Start()
     {
         // Starts the timer automatically
@@ -28,6 +31,12 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
             }
+        }
+        if (timeRemaining < 0)
+        {
+            Amanshaus.SetActive(true);
+            /*Hallo Herr Gruber*/
+
         }
     }
     void DisplayTime(float timeToDisplay)
