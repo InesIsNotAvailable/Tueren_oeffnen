@@ -12,4 +12,9 @@ public class ButtonManager : MonoBehaviour
     public GameObject doorIn;
 
    
+        public void Update()
+    {
+        
+    }
+
 }
